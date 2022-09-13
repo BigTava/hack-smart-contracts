@@ -1,11 +1,10 @@
 import { loadFixture } from "@nomicfoundation/hardhat-network-helpers";
 import { expect } from "chai";
 import { ethers } from "hardhat";
-import { BigNumber } from "ethers";
 
-describe.only("Reentrance", function () {
+describe("Reentrance", function () {
   async function deployReentrance() {
-    const [owner, donor, otherAccount, attacker] = await ethers.getSigners();
+    const [, donor, otherAccount, attacker] = await ethers.getSigners();
     const donation = 1000000000000000;
     const Reentrance = await ethers.getContractFactory("Reentrance");
     const reentrance = await Reentrance.deploy();
@@ -18,8 +17,9 @@ describe.only("Reentrance", function () {
 
   describe("Deployment", function () {
     it("The contract should have the right donation amount", async function () {
-      const { reentrance, donation, otherAccount, attacker } =
-        await loadFixture(deployReentrance);
+      const { reentrance, donation, otherAccount } = await loadFixture(
+        deployReentrance
+      );
 
       expect(await reentrance.balanceOf(otherAccount.address)).to.equal(
         donation
