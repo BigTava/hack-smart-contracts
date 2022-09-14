@@ -1,4 +1,3 @@
-import { loadFixture } from "@nomicfoundation/hardhat-network-helpers";
 import { SignerWithAddress } from "@nomiclabs/hardhat-ethers/signers";
 import { expect } from "chai";
 import { ethers } from "hardhat";
@@ -6,7 +5,7 @@ import web3 from "web3";
 
 import { Fallback } from "../typechain-types/Fallback";
 
-describe.only("Fallback", function () {
+describe("Fallback", function () {
   let attacker: SignerWithAddress;
   let owner: SignerWithAddress;
   let fallback: Fallback;

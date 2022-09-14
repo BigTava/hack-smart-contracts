@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "npx hardhat compile",
+    "compile:local": "npx hardhat compile",
+    "clean:local": "npx hardhat clean",
     "test:local": "npx hardhat test"
   },
   "repository": {
