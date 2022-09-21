@@ -5,7 +5,7 @@ import web3 from "web3";
 
 import { Fallout } from "../typechain-types/Fallout";
 
-describe.only("Fallout", function () {
+describe("Fallout", function () {
   let attacker: SignerWithAddress;
   let owner: SignerWithAddress;
   let fallout: Fallout;
