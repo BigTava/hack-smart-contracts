@@ -7,7 +7,7 @@ import { CoinFlip } from "../typechain-types/CoinFlip";
 import { CoinFlipAttack } from "../typechain-types/CoinFlip/CoinFlipAttack";
 
 const hre = require("hardhat");
-describe.only("CoinFlip", function () {
+describe("CoinFlip", function () {
   let owner: SignerWithAddress;
   let attacker: SignerWithAddress;
   let coinFlip: CoinFlip;
