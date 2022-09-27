@@ -3,6 +3,20 @@ pragma solidity ^0.8.0;
 
 import '@openzeppelin/contracts/utils/math/SafeMath.sol';
 
+/*
+    Ether is sent to contract
+              |
+        is msg.data empty?
+              /  \
+            yes  no
+            /      \
+receive() exists?  fallback()
+          /  \
+        yes   no
+        /       \
+    receive()   fallback()
+*/
+
 contract Fallback {
 
   using SafeMath for uint256;
