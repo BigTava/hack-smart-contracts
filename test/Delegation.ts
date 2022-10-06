@@ -2,7 +2,6 @@ import { SignerWithAddress } from "@nomiclabs/hardhat-ethers/signers";
 import { expect } from "chai";
 import { ethers } from "hardhat";
 var Web3 = require("web3");
-const hre = require("hardhat");
 
 import { Delegation, Delegate } from "../typechain-types/Delegation";
 

@@ -6,7 +6,7 @@ import web3 from "web3";
 import { Force } from "../typechain-types/Force";
 import { ForceAttack } from "../typechain-types/Force/ForceAttack";
 
-describe.only("Force", function () {
+describe("Force", function () {
   let owner: SignerWithAddress;
   let attacker: SignerWithAddress;
   let force: Force;
