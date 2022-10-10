@@ -3,7 +3,7 @@ import { expect } from "chai";
 import { ethers } from "hardhat";
 import web3 from "web3";
 
-import { CoinFlipd } from "../typechain-types/CoinFlip";
+import { CoinFlip } from "../typechain-types/CoinFlip";
 import { CoinFlipAttack } from "../typechain-types/CoinFlip/CoinFlipAttack";
 
 const hre = require("hardhat");
