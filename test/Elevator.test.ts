@@ -5,7 +5,7 @@ import { ethers } from "hardhat";
 import { Elevator } from "../typechain-types/Elevator/Elevator.sol";
 import { Building } from "../typechain-types/Elevator/Building.sol:Building";
 
-describe.only("Elevator", function () {
+describe("Elevator", function () {
   let attacker: SignerWithAddress;
   let owner: SignerWithAddress;
   let elevator: Elevator;
