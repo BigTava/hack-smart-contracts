@@ -4,7 +4,7 @@ import { ethers } from "hardhat";
 
 import { NaughtCoin } from "../typechain-types/NaughtCoin";
 
-describe.only("NaughtCoin", function () {
+describe("NaughtCoin", function () {
   let owner: SignerWithAddress;
   let attacker: SignerWithAddress;
   let naughtCoin: NaughtCoin;
